@@ -1,6 +1,5 @@
 import React from 'react'
 import "../Facts/p.css"
-import Im from "./h.jpg"
 
 function Product() {
   return (
@@ -8,7 +7,7 @@ function Product() {
     
     <div className='cards-product'>
     <div class="container-product">
-                <img src={Im} alt="las vegas" />
+                <img src="" alt="las vegas" />
             </div>
             <div class="details">
                 <h3>Las Vegas</h3>
@@ -17,7 +16,7 @@ function Product() {
 
             <div class="card card2">
             <div class="container">
-                <img src="newyork.jpg" alt="New York" />
+                <img src="" alt="New York" />
             </div>
             <div class="details">
                 <h3>New York</h3>
