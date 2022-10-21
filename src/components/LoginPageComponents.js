@@ -4,14 +4,10 @@ export const Container = styled.div`
 background-color: #fff;
 border-radius: 10px;
 box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-position: relative;
 overflow: hidden;
 width: 678px;
 max-width: 100%;
 min-height: 400px;
-left: 27rem;
-top: 10rem;
-
 `;
 
 export const SignUpContainer = styled.div`
@@ -52,11 +48,17 @@ flex-direction: column;
 padding: 0 50px;
 height: 100%;
 text-align: center;
+@media(max-width: 492px){
+   font-size: 9px;
+}
 `;
 
 export const Title = styled.h1`
 font-weight: bold;
 margin: 0;
+ @media(max-width: 492px){
+  font-size: 12px;
+ }
 `;
 
 export const Input = styled.input`
@@ -85,6 +87,11 @@ export const Button = styled.button`
    &:focus {
        outline: none;
    }
+   
+   @media(max-width: 492px){
+    padding: 0px 15px;
+    font-size: 7px;
+   }
 `;
 export const GhostButton = styled(Button)`
 background-color: transparent;
@@ -108,6 +115,19 @@ transition: transform 0.6s ease-in-out;
 z-index: 100;
 ${props =>
  props.signinIn !== true ? `transform: translateX(-100%);` : null}
+
+ @media(max-width: 492px){
+  position: absolute;
+    top: 159px;
+    left: 50%;
+    width: 48%;
+    height: 55%;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -webkit-transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+ }
 `;
 
 export const Overlay = styled.div`
