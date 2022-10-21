@@ -3,10 +3,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
-import ListAltIcon from "@mui/icons-material/ListAlt";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ContactsIcon from "@mui/icons-material/Contacts";
 import { Container } from "@mui/system";
 import CustomButton from "./Custombutton";
 import { Link } from 'react-router-dom'
@@ -47,20 +45,20 @@ export const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["GitHub", "Twitter", "Services", "Listed", "Contact"].map(
+        {["GitHub", "Twitter", "LinkedIn"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  <Link to="https://github.com/Shivam-Katare">
+                  <a href="https://github.com/Shivam-Katare">
                   {index === 0 && <GitHubIcon />}
-                  </Link>
-                  <Link to="https://twitter.com/Shivamkatare_27">
+                  </a>
+                  <a href="https://twitter.com/Shivamkatare_27">
                      {index === 1 && <TwitterIcon />}
-                  </Link>
-                  {index === 2 && <MiscellaneousServicesIcon />}
-                  {index === 3 && <ListAltIcon />}
-                  {index === 4 && <ContactsIcon />}
+                  </a>
+                  <a href="https://www.linkedin.com/in/shivam-katare-aa80b218b/">
+                  {index === 2 && <LinkedInIcon />}
+                  </a>
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
