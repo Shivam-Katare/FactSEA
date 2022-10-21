@@ -160,7 +160,7 @@ export const LandingPageNav = () => {
         }}
       >
         
-        <a href="">
+        <a href="https://github.com/Shivam-Katare/FactSEA">
            <CustomButton
           backgroundColor="#0F1B4C"
           color="#fff"
