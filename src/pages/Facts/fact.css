@@ -1,8 +1,11 @@
-/* .all-facts-container{
-  background: rgb(157,194,208);
-background: linear-gradient(90deg, rgba(157,194,208,1) 0%, rgba(75,126,166,1) 41%, rgba(23,78,128,1) 66%, rgba(0,0,0,1) 100%);
-} */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.neon {
+  color: black;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+
+}
 
 .project {
   padding: 80px 0;
@@ -246,14 +249,6 @@ background: linear-gradient(90deg, rgba(157,194,208,1) 0%, rgba(75,126,166,1) 41
   margin-bottom: 5rem;
 }
 
-
-.neon {
-  color: black;
-  text-align: center;
-  font-family: 'Righteous', cursive;
-
-}
-
 .know-image-custom-btn {
   width: 130px;
   height: 40px;
@@ -319,4 +314,15 @@ background: linear-gradient(90deg, rgba(157,194,208,1) 0%, rgba(75,126,166,1) 41
 .know-image-gallery-btn:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+@media(max-width: 828px){
+  button.know-image-custom-btn.know-image-gallery-btn {
+    left: 11rem;
+}
+}
+
+@media(max-width: 342px){
+  button.know-image-custom-btn.know-image-gallery-btn {
+    left: 6rem;
+}
 }

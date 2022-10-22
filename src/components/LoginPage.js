@@ -45,7 +45,7 @@ function LoginPage() {
         <Components.Form onSubmit={handleOnSubmitSignUp}>
           <Components.Title>Sign Up</Components.Title>
           {needsEmailVerification ? (
-            <p className='verification-text'>Please Check Your Mailbox abd Click on that Link</p>
+            <p className='verification-text'>Please Check Your Mailbox and Click on that Link</p>
           ) : (
             <>
               <Components.Input type='text' placeholder='First name' 

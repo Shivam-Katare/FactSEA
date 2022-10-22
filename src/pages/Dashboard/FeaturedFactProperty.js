@@ -30,7 +30,7 @@ const FeaturedFactProperty = () => {
             Featured Facts
           </Typography>
           <Typography sx={{ color: "#5A6473", fontSize: "16px", mt: 1 }}>
-            Everything you need to know when looking for a new home!
+          Most weird things happen on earth!
           </Typography>
         </PropertiesTextBox>
 
@@ -39,11 +39,8 @@ const FeaturedFactProperty = () => {
             <FeaturedCards
               key={property.id}
               img={property.img}
-              price={property.price}
-              address={property.address}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-              space={property.space}
+              title={property.title}
+              desc={property. desc}
             />
           ))}
         </PropertiesBox>

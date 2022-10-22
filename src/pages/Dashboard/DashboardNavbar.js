@@ -79,16 +79,6 @@ export const Navbar = () => {
     },
   }));
 
-  // const NavbarLinksBox = styled(Box)(({ theme }) => ({
-  //   display: "flex",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   gap: theme.spacing(3),
-  //   [theme.breakpoints.down("md")]: {
-  //     display: "none",
-  //   },
-  // }));
-
   const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
     cursor: "pointer",
     display: "none",
@@ -140,14 +130,6 @@ export const Navbar = () => {
           </Drawer>
           <NavbarLogo src={Logo} alt="logo" className="main-logo" />
         </Box>
-
-        {/* <NavbarLinksBox>
-          <NavLink variant="body2">Quiz</NavLink>
-          <NavLink variant="body2">Facts</NavLink>
-          <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Listed</NavLink>
-          <NavLink variant="body2">Contact</NavLink>
-        </NavbarLinksBox> */}
       </Box>
 
       <Box

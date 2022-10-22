@@ -140,14 +140,6 @@ export const LandingPageNav = () => {
           </Drawer>
           <NavbarLogo src={Logo} alt="logo" className="main-logo"/>
         </Box>
-{/* 
-        <NavbarLinksBox>
-          <NavLink variant="body2">Quiz</NavLink>
-          <NavLink variant="body2">Facts</NavLink>
-          <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Listed</NavLink>
-          <NavLink variant="body2">Contact</NavLink>
-        </NavbarLinksBox> */}
       </Box>
 
       <Box

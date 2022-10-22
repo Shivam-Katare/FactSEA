@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 import "./fact.css"
-import "./p.css"
+import "./commonfacts.css"
 import SpecialFacts from './SpecialFacts';
 import WiredFacts from './WiredFacts';
 import { Link } from 'react-router-dom';

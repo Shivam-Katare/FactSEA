@@ -1,7 +1,7 @@
 import { Box, styled, Typography } from "@mui/material";
 import React from "react";
 
-const FeaturedCards = ({ img, price, address}) => {
+const FeaturedCards = ({ img, title, desc}) => {
   const HouseBox = styled(Box)(({ theme }) => ({
     borderTopLeftRadius: "10px",
     borderTopRightRadius: "10px",
@@ -26,10 +26,10 @@ const FeaturedCards = ({ img, price, address}) => {
 
       <Box sx={{ padding: "1rem" }}>
         <Typography variant="body2" sx={{ fontWeight: "700" }}>
-          {price}
+          {title}
         </Typography>
         <Typography variant="body2" sx={{ my: 2 }}>
-          {address}
+          {desc}
         </Typography>
 
         <Box
@@ -46,6 +46,3 @@ const FeaturedCards = ({ img, price, address}) => {
 };
 
 export default FeaturedCards;
-
-
-// box-shadow: 11px 9px 33px 2px grey;
