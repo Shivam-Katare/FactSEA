@@ -12,6 +12,7 @@ import LandingPage from './pages/Landing-Page/LandingPage';
 import LoginPage from './components/LoginPage';
 import Dashboard from './pages/Dashboard/Dashboard';
 import LostPage from './components/LostPage';
+import StrangeGallery from './pages/StrangeGallery/StrangeGallery';
 
 const nhost = new NhostClient({
   subdomain: process.env.REACT_APP_NHOST_SUBDOMAIN,
@@ -30,6 +31,7 @@ function App() {
             <Route path="quiz" element={<Quiz />} />
             <Route path='questions' element={<Questions />} />
             <Route path='score' element={<FinalScreen />} />
+            <Route path='strange' element={<StrangeGallery />} />
             <Route path="*" element={<LostPage />} />
             <Route path="/" element={
               <ProtectedRoute>
