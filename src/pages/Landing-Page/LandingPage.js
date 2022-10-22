@@ -1,7 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
-import { Link } from 'react-router-dom'
 import landingPageImage from "./landingPage.gif";
 import CustomButton from "../Dashboard/Custombutton";
 import LandingPageNav from "./LandingPageNav";
@@ -60,15 +59,15 @@ const LandingPage = () => {
               even play a short quiz game to better understand it.
             </Typography>
 
-            <Link to="/explore">
+            <a href="https://github.com/Shivam-Katare/FactSEA">
               <CustomButton
                 backgroundColor="#0F1B4C"
                 color="#fff"
-                buttonText="Explore"
+                buttonText="GitHub Repo"
                 heroBtn={true}
                 className="custom-button"
               />
-            </Link>
+            </a>
           </Box>
 
           <Box sx={{ flex: "1.25" }}>
