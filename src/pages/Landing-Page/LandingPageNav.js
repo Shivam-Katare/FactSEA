@@ -18,6 +18,7 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const LandingPageNav = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -158,13 +159,13 @@ export const LandingPageNav = () => {
         }}
       >
         
-        <a href="https://github.com/Shivam-Katare/FactSEA">
+        <Link to="/explore">
            <CustomButton
           backgroundColor="#0F1B4C"
           color="#fff"
-          buttonText="GitHub"
+          buttonText="Explore"
         />
-        </a>
+        </Link>
        
       </Box>
     </NavbarContainer>
