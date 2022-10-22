@@ -3,6 +3,8 @@ import { Container } from "@mui/system";
 import React from "react";
 import Navbar from "./DashboardNavbar";
 import DashboardImg from "./dashboard.gif";
+import CustomButton from "./Custombutton";
+import { Link } from "react-router-dom";
 
 
 const Dashboard = () => {
@@ -56,6 +58,19 @@ const Dashboard = () => {
               NATURE hides many things from us! It's your chance to understand nature more 
               deeply. Read facts, play a small quiz game and understand the your "NATURE."
             </Typography>
+
+          <Link to="/strange">
+             <CustomButton
+                backgroundColor="#0F1B4C"
+                color="#fff"
+                buttonText="Strange Images"
+                heroBtn={true}
+                className="custom-button"
+                width="165px"
+                fontSize="15px"
+              />
+          </Link>
+         
           </Box>
 
           <Box sx={{ flex: "1.25" }}>
